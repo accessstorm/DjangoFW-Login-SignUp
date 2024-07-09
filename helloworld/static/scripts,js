@@ -1,0 +1,13 @@
+document.getElementById('signUpForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    var password = document.getElementById('password').value;
+    var confirmPassword = document.getElementById('confirmPassword').value;
+
+    if (password !== confirmPassword) {
+        alert('Passwords do not match!');
+    } else {
+        alert('Sign up successful!');
+        // Here you can add your code to submit the form or handle sign-up logic
+    }
+});
